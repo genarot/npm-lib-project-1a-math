@@ -1,0 +1,28 @@
+{
+  "name": "project-1a-math",
+  "version": "1.0.0",
+  "description": "Simple math project to learn how to create a nodejs library and publish it to npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/genarot/npm-lib-project-1a-math.git"
+  },
+  "keywords": [
+    "nodejs",
+    "package",
+    "math",
+    "matematica",
+    "plus",
+    "divition",
+    "multiplication"
+  ],
+  "author": "Genaro Tinoco <genaro_13@hotmail.es>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/genarot/npm-lib-project-1a-math/issues"
+  },
+  "homepage": "https://github.com/genarot/npm-lib-project-1a-math#readme"
+}
