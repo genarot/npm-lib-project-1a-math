@@ -1,5 +1,5 @@
 {
-  "name": "project-1a-math",
+  "name": "npm-lib-project-1a-math",
   "version": "1.0.0",
   "description": "Simple math project to learn how to create a nodejs library and publish it to npm",
   "main": "index.js",
