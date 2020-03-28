@@ -1,4 +1,21 @@
 /**
+ * Ensure that the values provided are numbers
+ * @param {number} n1
+ * @param {number} n2
+ * @returns {boolean}
+ */
+exports.areNumbers = (n1, n2) => {
+    return (typeof  n1 === 'number' && typeof n2 === 'number')
+}
+
+/**
+ * Throw an error message when the values are not number
+ */
+exports.errorMessage = () =>{
+    console.error('One of the two values provided are not number')
+}
+
+/**
  * Two numbers addition
  * @example
  *  n1 = 1, n2 = 4 = >  result 5
@@ -7,7 +24,7 @@
  * @returns {*}
  */
 exports.addition = (n1, n2) => {
-    return n1 + n2
+    return this.areNumbers(n1, n2) ? (n1 + n2) : this.errorMessage()
 }
 
 /**
@@ -19,7 +36,7 @@ exports.addition = (n1, n2) => {
  * @returns {*}
  */
 exports.subtraction = (n1, n2) => {
-    return n1 - n2
+    return this.areNumbers(n1, n2) ? (n1 - n2) : this.errorMessage()
 }
 
 /**
@@ -31,7 +48,7 @@ exports.subtraction = (n1, n2) => {
  * @returns {*}
  */
 exports.multiplication = (n1, n2) => {
-    return n1 * n2
+    return this.areNumbers(n1, n2) ? (n1 * n2) : this.errorMessage()
 }
 
 /**
@@ -43,7 +60,7 @@ exports.multiplication = (n1, n2) => {
  * @returns {number}
  */
 exports.division = (n1, n2) => {
-    return n1 / n2
+    return this.areNumbers(n1, n2) ? (n1 / n2) : this.errorMessage()
 }
 
 /**
@@ -53,5 +70,5 @@ exports.division = (n1, n2) => {
  * @returns {number}
  */
 exports.mod = (n1, n2) => {
-    return n1 % n2
+    return this.areNumbers(n1, n2) ? (n1 % n2) : this.errorMessage()
 }
