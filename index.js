@@ -40,8 +40,18 @@ exports.multiplication = (n1, n2) => {
  *  n1 = 1, n2 = 4 = >  result 0.25
  * @param {number} n1 Number one of the division
  * @param {number} n2 Number two of the division
- * @returns {*}
+ * @returns {number}
  */
 exports.division = (n1, n2) => {
     return n1 / n2
+}
+
+/**
+ * Two numbers module
+ * @param {number} n1
+ * @param {number} n2
+ * @returns {number}
+ */
+exports.mod = (n1, n2) => {
+    return n1 % n2
 }
